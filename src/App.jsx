@@ -24,7 +24,7 @@ function PublicOnly({ children }) {
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/focus_architect/">
         <Routes>
           <Route path="/login" element={<PublicOnly><Login /></PublicOnly>} />
           <Route path="/signup" element={<PublicOnly><Signup /></PublicOnly>} />
